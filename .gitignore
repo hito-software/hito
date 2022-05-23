@@ -3,4 +3,4 @@
 .cdn
 docker-compose.override.yml
 .env
-storage
+/storage
