@@ -59,7 +59,8 @@
         },
         "merge-plugin": {
             "include": [
-                ".dev/composer.json"
+                ".dev/composer.json",
+                ".runtime/composer.json"
             ]
         }
     },
