@@ -1833,16 +1833,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.4.3",
+            "version": "2.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "67c26b443f348a51926030c83481b85718457d3d"
+                "reference": "0454e12ef0cd597ccd2adb036f7bda4e7fface66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/67c26b443f348a51926030c83481b85718457d3d",
-                "reference": "67c26b443f348a51926030c83481b85718457d3d",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/0454e12ef0cd597ccd2adb036f7bda4e7fface66",
+                "reference": "0454e12ef0cd597ccd2adb036f7bda4e7fface66",
                 "shasum": ""
             },
             "require": {
@@ -1868,9 +1868,6 @@
                 "bamarni-bin": {
                     "bin-links": true,
                     "forward-command": false
-                },
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -1932,7 +1929,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.4.3"
+                "source": "https://github.com/guzzle/psr7/tree/2.4.5"
             },
             "funding": [
                 {
@@ -1948,20 +1945,26 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-26T14:07:24+00:00"
+            "time": "2023-04-17T16:00:45+00:00"
         },
         {
             "name": "hito-software/admin",
-            "version": "dev-main",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hito-software/admin.git",
+                "reference": "0856c5e27577fc1d5d2c9d8bbba7fafff76d59cf"
+            },
             "dist": {
-                "type": "path",
-                "url": "/var/www/html/.dev/admin",
-                "reference": "2dd77ff25b2d12102d3dd27f28a8d8ce4519ab54"
+                "type": "zip",
+                "url": "https://api.github.com/repos/hito-software/admin/zipball/0856c5e27577fc1d5d2c9d8bbba7fafff76d59cf",
+                "reference": "0856c5e27577fc1d5d2c9d8bbba7fafff76d59cf",
+                "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.2",
-                "hito-software/core": "*",
-                "hito-software/module": "*",
+                "hito-software/core": "dev-master",
+                "hito-software/module": "dev-master",
                 "laravel/framework": "^9.11",
                 "laravel/sanctum": "^2.14.1",
                 "laravel/tinker": "^2.7",
@@ -1975,6 +1978,7 @@
                 "phpunit/phpunit": "^9.5.10",
                 "spatie/laravel-ignition": "^1.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -1986,43 +1990,36 @@
                     "Hito\\Admin\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Hito\\Admin\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "analyse": [
-                    "vendor/bin/phpstan analyse"
-                ],
-                "test": [
-                    "vendor/bin/pest"
-                ],
-                "test-coverage": [
-                    "vendor/bin/pest --coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": ":package_description",
             "homepage": "https://github.com/hito-software/auth",
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/hito-software/admin/issues",
+                "source": "https://github.com/hito-software/admin/tree/master"
+            },
+            "time": "2022-05-20T09:58:26+00:00"
         },
         {
             "name": "hito-software/auth",
-            "version": "dev-main",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hito-software/auth.git",
+                "reference": "f6769b3433d0b8219ec11d2d8f617550448e6573"
+            },
             "dist": {
-                "type": "path",
-                "url": "/var/www/html/.dev/auth",
-                "reference": "4b8e0b44a33605a3219803ef5d0248d0c1174350"
+                "type": "zip",
+                "url": "https://api.github.com/repos/hito-software/auth/zipball/f6769b3433d0b8219ec11d2d8f617550448e6573",
+                "reference": "f6769b3433d0b8219ec11d2d8f617550448e6573",
+                "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.2",
-                "hito-software/core": "*",
-                "hito-software/module": "*",
+                "hito-software/core": "dev-master",
+                "hito-software/module": "dev-master",
                 "laravel/framework": "^9.11",
                 "laravel/sanctum": "^2.14.1",
                 "laravel/tinker": "^2.7",
@@ -2036,6 +2033,7 @@
                 "phpunit/phpunit": "^9.5.10",
                 "spatie/laravel-ignition": "^1.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2047,43 +2045,37 @@
                     "Hito\\Auth\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Hito\\Auth\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "analyse": [
-                    "vendor/bin/phpstan analyse"
-                ],
-                "test": [
-                    "vendor/bin/pest"
-                ],
-                "test-coverage": [
-                    "vendor/bin/pest --coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": ":package_description",
             "homepage": "https://github.com/hito-software/auth",
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/hito-software/auth/issues",
+                "source": "https://github.com/hito-software/auth/tree/master"
+            },
+            "time": "2022-05-20T09:58:26+00:00"
         },
         {
             "name": "hito-software/composer-installer",
-            "version": "dev-main",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hito-software/composer-installer.git",
+                "reference": "c80f9cf6587e1cf968552f3783cba1344ad9a5c7"
+            },
             "dist": {
-                "type": "path",
-                "url": "/var/www/html/.dev/composer-installer",
-                "reference": "3ff08638fd6b10b48efc0c197a5fc092bed6c8a3"
+                "type": "zip",
+                "url": "https://api.github.com/repos/hito-software/composer-installer/zipball/c80f9cf6587e1cf968552f3783cba1344ad9a5c7",
+                "reference": "c80f9cf6587e1cf968552f3783cba1344ad9a5c7",
+                "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^2.2",
                 "php": "^8.1"
             },
+            "default-branch": true,
             "type": "composer-plugin",
             "extra": {
                 "class": "Hito\\Installer\\Plugin",
@@ -2094,34 +2086,41 @@
                     "Hito\\Installer\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": ":package_description",
             "homepage": "https://github.com/hito-software/composer-installer",
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/hito-software/composer-installer/issues",
+                "source": "https://github.com/hito-software/composer-installer/tree/master"
+            },
+            "time": "2022-05-20T08:01:42+00:00"
         },
         {
             "name": "hito-software/core",
-            "version": "dev-main",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hito-software/core.git",
+                "reference": "ee7e6872d0e66b1b5638975b708702d65a7f0e77"
+            },
             "dist": {
-                "type": "path",
-                "url": "/var/www/html/.dev/core",
-                "reference": "a3ddebb4237ba5fc531259ae0f8fda9e248bce24"
+                "type": "zip",
+                "url": "https://api.github.com/repos/hito-software/core/zipball/ee7e6872d0e66b1b5638975b708702d65a7f0e77",
+                "reference": "ee7e6872d0e66b1b5638975b708702d65a7f0e77",
+                "shasum": ""
             },
             "require": {
                 "composer/composer": "^2.3",
                 "php": "^8.1"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
-                    "providers": "Hito\\Core\\CoreServiceProvider",
-                    "aliases": {
-                        "Module": "Hito\\Core\\Module\\Facades\\Module"
-                    }
+                    "providers": "Hito\\Core\\CoreServiceProvider"
                 }
             },
             "autoload": {
@@ -2129,49 +2128,68 @@
                     "Hito\\Core\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": ":package_description",
             "homepage": "https://github.com/hito-software/core",
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/hito-software/core/issues",
+                "source": "https://github.com/hito-software/core/tree/master"
+            },
+            "time": "2022-05-20T09:57:48+00:00"
         },
         {
             "name": "hito-software/module",
-            "version": "dev-main",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hito-software/module.git",
+                "reference": "5cc95c7b19f07e43d0d3aa4bbfd5eb28159701d0"
+            },
             "dist": {
-                "type": "path",
-                "url": "/var/www/html/.dev/module",
-                "reference": "876bb760172047f0efa0272de10c2a84635b1cf4"
+                "type": "zip",
+                "url": "https://api.github.com/repos/hito-software/module/zipball/5cc95c7b19f07e43d0d3aa4bbfd5eb28159701d0",
+                "reference": "5cc95c7b19f07e43d0d3aa4bbfd5eb28159701d0",
+                "shasum": ""
             },
             "require": {
-                "hito-software/composer-installer": "*",
+                "hito-software/composer-installer": "dev-master",
                 "php": "^8.1"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Hito\\Module\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": ":package_description",
             "homepage": "https://github.com/hito-software/module",
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/hito-software/module/issues",
+                "source": "https://github.com/hito-software/module/tree/master"
+            },
+            "time": "2022-05-20T08:02:39+00:00"
         },
         {
             "name": "hito-software/platform",
-            "version": "dev-main",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hito-software/platform.git",
+                "reference": "e5c95552f5fc90781791b314ca7bd62bb3ac5fc8"
+            },
             "dist": {
-                "type": "path",
-                "url": "/var/www/html/.dev/platform",
-                "reference": "44e5765106254111070386d9380bbd0cf8a3b2cd"
+                "type": "zip",
+                "url": "https://api.github.com/repos/hito-software/platform/zipball/e5c95552f5fc90781791b314ca7bd62bb3ac5fc8",
+                "reference": "e5c95552f5fc90781791b314ca7bd62bb3ac5fc8",
+                "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
@@ -2179,10 +2197,10 @@
                 "ext-fileinfo": "*",
                 "ext-zip": "*",
                 "genealabs/laravel-model-caching": "0.12.4",
-                "hito-software/admin": "*",
-                "hito-software/auth": "*",
-                "hito-software/core": "*",
-                "hito-software/module": "*",
+                "hito-software/admin": "dev-master",
+                "hito-software/auth": "dev-master",
+                "hito-software/core": "dev-master",
+                "hito-software/module": "dev-master",
                 "php": "^8.1",
                 "spatie/laravel-activitylog": "^4.5.2",
                 "spatie/laravel-package-tools": "^1.9.2",
@@ -2192,6 +2210,7 @@
                 "spatie/once": "^3.1",
                 "tonysm/turbo-laravel": "1.1.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2203,30 +2222,17 @@
                     "Hito\\Platform\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Hito\\Platform\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "analyse": [
-                    "vendor/bin/phpstan analyse"
-                ],
-                "test": [
-                    "vendor/bin/pest"
-                ],
-                "test-coverage": [
-                    "vendor/bin/pest --coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": ":package_description",
             "homepage": "https://github.com/hito-software/platform",
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/hito-software/platform/issues",
+                "source": "https://github.com/hito-software/platform/tree/master"
+            },
+            "time": "2022-05-20T09:58:26+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -3873,21 +3879,21 @@
         },
         {
             "name": "psr/http-factory",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-factory.git",
-                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be"
+                "reference": "e616d01114759c4c489f93b099585439f795fe35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
-                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/e616d01114759c4c489f93b099585439f795fe35",
+                "reference": "e616d01114759c4c489f93b099585439f795fe35",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0.0",
-                "psr/http-message": "^1.0"
+                "psr/http-message": "^1.0 || ^2.0"
             },
             "type": "library",
             "extra": {
@@ -3907,7 +3913,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common interfaces for PSR-7 HTTP message factories",
@@ -3922,31 +3928,31 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-factory/tree/master"
+                "source": "https://github.com/php-fig/http-factory/tree/1.0.2"
             },
-            "time": "2019-04-30T12:38:16+00:00"
+            "time": "2023-04-10T20:10:41+00:00"
         },
         {
             "name": "psr/http-message",
-            "version": "1.0.1",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": "^7.2 || ^8.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -3975,9 +3981,9 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-message/tree/master"
+                "source": "https://github.com/php-fig/http-message/tree/1.1"
             },
-            "time": "2016-08-06T14:39:51+00:00"
+            "time": "2023-04-04T09:50:52+00:00"
         },
         {
             "name": "psr/log",
